@@ -1,5 +1,4 @@
-Scraper Deezer
-==============
+Scraper LaPoste APIM
 
 ![Packagist version](https://badgen.net/packagist/v/rem42/scraper-laposte-apim)
 ![Packagist download](https://badgen.net/packagist/dt/rem42/scraper-laposte-apim)
