@@ -3,7 +3,6 @@
 namespace Scraper\ScraperLaPosteApim\Tests\Request;
 
 use PHPUnit\Framework\MockObject\MockObject;
-use PHPUnit\Framework\TestCase;
 use Scraper\Scraper\Client;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
@@ -11,7 +10,7 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 /**
  * @internal
  */
-abstract class AbtractRequestTest extends TestCase
+trait RequestTrait
 {
     private MockObject|ResponseInterface $responseInterface;
 

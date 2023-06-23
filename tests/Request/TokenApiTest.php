@@ -2,6 +2,7 @@
 
 namespace Scraper\ScraperLaPosteApim\Tests\Request;
 
+use PHPUnit\Framework\TestCase;
 use Scraper\ScraperLaPosteApim\Model\Error;
 use Scraper\ScraperLaPosteApim\Model\Token;
 use Scraper\ScraperLaPosteApim\Request\TokenRequest;
@@ -9,8 +10,10 @@ use Scraper\ScraperLaPosteApim\Request\TokenRequest;
 /**
  * @internal
  */
-class TokenApiTest extends AbtractRequestTest
+class TokenApiTest extends TestCase
 {
+    use RequestTrait;
+
     public function testTokenRequest(): void
     {
         $client = $this->getClient('token.json');
